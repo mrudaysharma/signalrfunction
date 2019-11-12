@@ -1,6 +1,6 @@
 var clientId = Math.floor(Math.random() * 1000000000000) + ''
 var unsentStrokes = []
-var apiBaseUrl = 'https://localhost:7071'
+var apiBaseUrl = 'http://localhost:7071'
 
 var connection = new signalR.HubConnectionBuilder()
   .withUrl(`${apiBaseUrl}/api`)
